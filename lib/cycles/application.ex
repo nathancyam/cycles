@@ -13,7 +13,9 @@ defmodule Cycles.Application do
       # Starts a worker by calling: Cycles.Worker.start_link(arg)
       # {Cycles.Worker, arg}
       {Ring, [name: Cycles.HashRing]},
-      {Cycles.NodeListener, [name: Cycles.NodeListener]}
+      {Cycles.NodeListener, [name: Cycles.NodeListener]},
+      {Registry, [keys: :unique, name: Cycles.Registry]},
+      {DynamicSupervisor, [name: Cycles.DynamicSupervisor, strategy: :one_for_one]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
