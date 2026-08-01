@@ -1,3 +1,4 @@
 %{
   "ex_hash_ring": {:hex, :ex_hash_ring, "7.0.0", "2d92d90669019536abaab7db6ccf00cb33c323e43a1fb44f1f16177a3d777a99", [:mix], [], "hexpm", "9f61f33f043a69e9df9febe6df05ddb0ec78227a43aad8407503e2cd81715c5b"},
+  "hrw": {:hex, :hrw, "0.2.1", "5a8eb2aefe4ac0417ca525b84a3035fd0fbe15109fec4b9e48ce06702286a104", [:mix], [], "hexpm", "41e14024bddac94bc83362c100b62a99c895971f9511e22b7ae4758c2378d824"},
 }

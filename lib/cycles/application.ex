@@ -13,6 +13,7 @@ defmodule Cycles.Application do
       # Starts a worker by calling: Cycles.Worker.start_link(arg)
       # {Cycles.Worker, arg}
       {Ring, [name: Cycles.HashRing]},
+      Cycles.Cluster,
       {Cycles.NodeListener, [name: Cycles.NodeListener]},
       {Registry, [keys: :unique, name: Cycles.Registry]},
       {DynamicSupervisor, [name: Cycles.DynamicSupervisor, strategy: :one_for_one]}
